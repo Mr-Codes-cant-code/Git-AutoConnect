@@ -17,5 +17,5 @@
 
 # Future Features
  + Terminal for more features
- + More Accecibilty for 'index.rb'
+ + More Accessibility for 'index.rb'
  + Data Collection for recording advancements with improvement percentage (IP Rating)
