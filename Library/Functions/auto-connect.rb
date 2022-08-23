@@ -25,6 +25,10 @@ if remote_origin_name[0] == "-"
 end
 remote_origin_name = remote_origin_name.capitalize()
 
+File.open("repo-name.txt", "w+") do |file|
+  file.write(remote_origin_name)
+end
+
 time = Time.new
 year =  time.year
 month = time.month
@@ -50,4 +54,9 @@ File.open("index.rb", "w+") do |file|
   file.write("# Main code here >>")
 end
 
-#FileUtils.mkdir_p("Functions")
+directory = File.dirname(File.expand_path("Terminal.rb"))
+directory = ("#{directory}/Terminal.rb")
+
+File.open(directory, "r+") do |file|
+  file.write("connection = true")
+end
