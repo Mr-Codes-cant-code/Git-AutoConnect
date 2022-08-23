@@ -1,4 +1,4 @@
-connection = false
+connection =false
 puts(">>>   Auto-GitProcess   <<<")
 if connection == false
   require_relative "Library/Functions/auto-connect.rb"
@@ -17,5 +17,7 @@ while x != 0
     require_relative "Library/Functions/push.rb"
   when "rand.words"
     require_relative "Library/Functions/random_words.rb"
+  when "exit"
+    require_relative "Library/Functions/exit.rb"
   end
 end

@@ -12,7 +12,7 @@
 
 # Current Version
 ```
-0.1.0
+0.1.7
 ```
 
 # Future Features
