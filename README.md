@@ -8,7 +8,7 @@
  3. Run the file and paste the RO Link in it.
  4. When the file ends unless there are any errors you must be connected to GitHub
  5. Refresh your GitHub Tab and there must be the 'auto-connect.rb' file.
- (NOTE: The steps migth change with versions)
+ (NOTE: The steps might change with versions)
 
 # Current Version
 ```

@@ -1,0 +1,7 @@
+print("Commit Name: ")
+commit = gets.strip()
+puts system('git add .')
+puts system('git status')
+commit_files = ("git commit -m \"#{commit}\"")
+puts system(commit_files)
+puts system('git push')
