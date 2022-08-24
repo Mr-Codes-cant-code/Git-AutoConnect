@@ -7,7 +7,7 @@ if connection == false
   fold_pwd = Dir.pwd
   fold_pwd = fold_pwd.split("/")
   curr_fold = fold_pwd[-1]
-  if curr_fold == "Auto-GitProcess"
+  if curr_fold == "Auto-GitConnect"
     require 'fileutils'
     auto_gitprocess = Dir.pwd
     new_file = File.read("Library/Words/repo-name.txt")
