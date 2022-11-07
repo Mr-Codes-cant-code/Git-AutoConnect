@@ -11,13 +11,15 @@ while x != 0
   input = gets.chomp()
 
   case input
-  when "file.copy"
+  when "/copy"
     require_relative "Library/Functions/copy.rb"
-  when "rep.push"
+  when "/push"
     require_relative "Library/Functions/push.rb"
   when "rand.words"
     require_relative "Library/Functions/random_words.rb"
-  when "exit"
+  when "/exit"
     require_relative "Library/Functions/exit.rb"
+  when "/pull"
+    require_relative "Library/Functions/pull.rb"
   end
 end

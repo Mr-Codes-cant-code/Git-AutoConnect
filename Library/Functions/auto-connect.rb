@@ -9,6 +9,7 @@ remote_origin_code = ('git remote add origin ' + remote_origin)
 remote_origin_name = remote_origin[19.. -5]
 remote_origin_name = remote_origin_name.split("/")
 remote_origin_name = remote_origin_name[1]
+remote_origin_creator_name = remote_origin_name[0]
 if remote_origin_name[-1] == "-"
   remote_origin_name = remote_origin_name[0.. -2]
 end
@@ -32,12 +33,20 @@ File.open("README.md", "w+") do |file|
   file.write("``` \n")
   file.write("#{date}/#{month}/#{year} \n")
   file.write("``` \n")
+
+  file.write(" + Created By: \n")
+  file.write("``` \n")
+  file.write(" #{remote_origin_creator_name}\n")
+  file.write("``` \n")
+
+
   file.write(" \n")
   file.write("# Current Version \n")
   file.write("``` \n")
   file.write("0.0.0 \n")
   file.write("``` \n")
   file.write("[comment]: <> (Add More!) \n")
+
 end
 
 FileUtils.mkdir_p("Library")
