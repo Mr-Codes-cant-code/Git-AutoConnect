@@ -1,3 +1,5 @@
+> [!NOTE]
+> This Branch has been depreciated as original code (54 commits ahead) was lost due to computer failure.
 # Git-AutoConnect
  + Connects to your online GitHub Repository just by running one file in less than 10 seconds!
  + Helps push latest advancements in your code in less than 5 seconds codeless!
